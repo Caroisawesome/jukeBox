@@ -11,7 +11,7 @@ class SearchBar extends Component {
                  value={props.value}
                  onChange={props.onChange}
                  onBlur={props.onBlur}
-                 placeholder="Common passwords..." />
+                 placeholder="song search..." />
             </div>
         );
     }
