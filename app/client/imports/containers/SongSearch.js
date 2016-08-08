@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SearchBar from '../components/SearchBar.js';
+import SearchBar from '../components/SearchBar';
 import { setSongSearchTerm } from '../action';
 import { connect } from 'react-redux';
 

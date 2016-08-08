@@ -1,7 +1,7 @@
 import {
     SET_USER_SONGS,
     SET_SONG_SEARCH_TERM
-} from '../action/action_types.js';
+} from '../action/action_types';
 
 const defaultSongState = {
     songs: []

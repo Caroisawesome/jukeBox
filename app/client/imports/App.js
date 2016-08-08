@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Room from './containers/RoomView.js';
+import Room from './containers/RoomView';
 
 
 class App extends Component {
