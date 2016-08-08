@@ -1,3 +1,4 @@
+import './SearchBar.less';
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
