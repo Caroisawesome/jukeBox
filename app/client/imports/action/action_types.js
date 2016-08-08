@@ -1,1 +1,1 @@
-const SET_USER_SONGS = 'set_user-songs';
+export const SET_USER_SONGS = 'set_user-songs';
