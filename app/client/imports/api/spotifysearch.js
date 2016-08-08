@@ -44,7 +44,7 @@ class SpotifySearch {
     }
 
     /**
-     * get results from search. 
+     * get results from search.
      * @returns {object}
      */
     getResults() {
