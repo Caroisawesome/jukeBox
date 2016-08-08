@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Room from './containers/RoomView.js';
+
 
 class App extends Component {
     render() {
         return (
-            <div>
-              JukeBox JukeBox
+            <div className="ui container">
+              <Room />
             </div>
         );
     }
