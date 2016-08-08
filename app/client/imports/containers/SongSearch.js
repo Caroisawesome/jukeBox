@@ -10,6 +10,7 @@ class SongSearch extends Component {
               <SearchBar
                  value={this.props.songSearchTerm}
                  onChange={this.props.setSearchTerm}
+                 onBlur={e => console.log("blue")}
                  />
             </div>
         );
