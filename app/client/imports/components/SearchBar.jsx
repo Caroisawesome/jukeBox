@@ -1,3 +1,4 @@
+import './SearchBar.less';
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
@@ -10,9 +11,10 @@ class SearchBar extends Component {
                  type="text"
                  value={props.value}
                  onChange={props.onChange}
-                 placeholder="Common passwords..." />
+                 placeholder="song search..." />
 
                  <button className="ui button" onClick={this.props.onSubmit}>Search</button>
+
             </div>
         );
     }

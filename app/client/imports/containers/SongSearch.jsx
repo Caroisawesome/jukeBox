@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import SearchBar from '../components/SearchBar.jsx';
-import { setSongSearchTerm, setSongSearchResults } from '../action';
+
+import SearchBar from '../components/SearchBar';
+import { setSongSearchTerm } from '../action';
 import { connect } from 'react-redux';
 import SearchApi from '../api/spotifysearch';
 

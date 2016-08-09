@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SongSearch from './SongSearch.jsx';
+import SongSearch from './SongSearch';
 
 class Room extends Component {
     render() {
