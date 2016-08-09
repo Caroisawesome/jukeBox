@@ -10,11 +10,13 @@ class SearchBar extends Component {
                  type="text"
                  value={props.value}
                  onChange={props.onChange}
-                 onBlur={props.onBlur}
                  placeholder="Common passwords..." />
+
+                 <button className="ui button" onClick={this.props.onSubmit}>Search</button>
             </div>
         );
     }
+
 }
 
 export default SearchBar;
