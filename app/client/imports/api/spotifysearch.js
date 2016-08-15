@@ -4,6 +4,7 @@ import { check } from 'meteor/check';
 
 const searchURL = 'https://api.spotify.com/v1/search';
 
+
 const SearchApi = {
 
 
@@ -14,8 +15,11 @@ const SearchApi = {
      */
     getTracks(query) {
         check(query, String);
+
         return fetch(`${searchURL}?q=${query}&type=track`)
             .then(data => data.json())
+            .then(json => json.tracks.items)
+            .then(logger);
     },
 
     /**
@@ -30,5 +34,12 @@ const SearchApi = {
     }
 };
 
+
+
+
+const logger = data => {
+    console.log("data", data);
+    return data;
+};
 
 export default SearchApi;

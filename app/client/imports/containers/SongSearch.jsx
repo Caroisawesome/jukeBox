@@ -33,12 +33,9 @@ const mapDispatchToPros = dispatch => {
             dispatch(setSongSearchTerm(event.target.value));
         },
         songSearch(terms) {
-            "use strict";
-
             SearchApi.getTracks(terms)
-                .then(data => {
-                    //console.log('track', tracks);
-                    dispatch(setSongSearchResults(data.tracks.items))
+                .then(tracks => {
+                    dispatch( setSongSearchResults(tracks) );
                 });
         }
     };
