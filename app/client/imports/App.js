@@ -5,13 +5,14 @@ import Room from './containers/RoomView';
 
 class App extends Component {
     render() {
+        console.log('CHILDREN', this.props.children);
         return (
             <div className="wrapper">
               <TopNavBar />
 
 
               <div className="ui container">
-                <Room />
+                    {this.props.children}
               </div>
 
             </div>

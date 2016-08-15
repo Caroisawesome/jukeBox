@@ -7,6 +7,10 @@ const RoomSchema = new SimpleSchema({
         type: String,
     },
 
+    coordinates: {
+        type: Object,
+        blackbox: true
+    },
     /**
      * id of spotify playlist?  Songs will be added to here
      */
