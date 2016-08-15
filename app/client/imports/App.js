@@ -8,10 +8,9 @@ class App extends Component {
         return (
             <div className="wrapper">
               <TopNavBar />
-
-
+        
               <div className="ui container">
-                <Room />
+                    {this.props.children}
               </div>
 
             </div>
